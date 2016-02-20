@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+  <head>
+    <meta charaset="utf-8">
+    <title>Chapter 3</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <h1>Chapter 3 : Selector</h1>
+
+    <section>
+    <h2>3-2 : attribute selector</h2>
+
+    <ul>
+      <li><a href="" lang="en-GB" rel="friend met">Peter</a></li>
+      <li><a href="" lang="es-ES" rel="friend">Pedro</a></li>
+      <li><a href="" lang="es-MX" rel="contsct">Pancho</a></li>
+   </ul> 
+   <style>
+     a[rel] {color:red;}
+     a[rel='friend'] {font-style: oblique;}
+     a[rel~='friend'] {font-family: monospace;}
+     a[lang|='es'] {font-size: 120%; }
+   </style>
+   </section>
+
+    <section> 
+      <h2>3-3 : new selectors</h2>
+
+      <ul>
+        <li><a href="http://example.com" title="Image Library">Example</a></li>
+        <li><a href="http://example.com" title="Free Image Library">Example</a></li>
+        <li><a href="http://example.com" title="Free Sound Library">Example</a></li>
+
+      <style>
+      
+      </style>
+    </section>
+  </body>
+</html>
